@@ -1,17 +1,18 @@
 #pragma once
 #include<iostream>
 
+using namespace std;
 
 class addv {
 public:
     int addId;
     string addDate;
 
-    int getaddvId();
-    void setaddvId(int addId);
+    int getAddvId();
+    void setAddvId(int addId);
 
-    string getaddvDate();
-    void setaddvDate(string addDate);
+    string getAddvDate();
+    void setAddvDate(string addDate);
 
     addv();
     addv(int AddId, string AddDate);

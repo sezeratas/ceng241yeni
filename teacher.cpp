@@ -27,7 +27,7 @@ teacher::teacher(string faculty, string sicilNo, string roomNo) {
 teacher::~teacher() {
 	cout << "Teacher deleted." << endl << endl;
 }
-int teacher::getFaculty() {
+string teacher::getFaculty() {
 	return this->faculty;
 }
 void teacher::setFaculty(string faculty) {
@@ -42,13 +42,13 @@ void teacher::setSicilNo(string sicilNo) {
 }
 
 string teacher::getRoomNo() {
-	return this->studentNumber;
+	return this->roomNo;
 }
 void teacher::setRoomNo(string roomNo) {
 	this->roomNo = roomNo;
 }
 
-SQLRETURN Pet::petAdd(SQLHANDLE SQLStatementHandle) {
+/*SQLRETURN Pet::petAdd(SQLHANDLE SQLStatementHandle) {
 	WCHAR wszInput[1000];
 
 	SQLRETURN retCode = 0;
@@ -64,4 +64,4 @@ SQLRETURN Pet::petAdd(SQLHANDLE SQLStatementHandle) {
 		cout << "FAILURE";
 
 	return retCode;
-}
+}*/

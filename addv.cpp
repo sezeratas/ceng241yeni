@@ -1,5 +1,4 @@
 #include "addv.h"
-#include "Classes.h"
 #include <string>
 #include <vector>
 
@@ -17,16 +16,16 @@ addv::addv(int addId, string addDate) {
 addv::~addv() {
 	cout << "Add deleted." << endl << endl;
 }
-int addv::getaddvId() {
+int addv::getAddvId() {
 	return NULL;
 }
-void addv::setaddvId(int id) {
+void addv::setAddvId(int id) {
 
 }
 
-string addv::getaddvDate() {
+string addv::getAddvDate() {
 	return NULL;
 }
-void addv::setaddvDate(string addDate) {
+void addv::setAddvDate(string addDate) {
 
 }

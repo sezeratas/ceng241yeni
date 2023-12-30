@@ -11,7 +11,6 @@ public:
     string sicilNo;
     string roomNo;
 
-
     //Constructor and Destructor
     teacher();
     teacher(string faculty, string sicilNo, string roomNo);
@@ -19,7 +18,7 @@ public:
 
     // Encapsulation for Person class
 
-    int getFaculty();
+    string getFaculty();
     void setFaculty(string faculty);
 
     string getSicilNo();
@@ -28,5 +27,3 @@ public:
     string getRoomNo();
     void setRoomNo(string roomNo);
 };
-
-teacher - faculty, sicil no, room no

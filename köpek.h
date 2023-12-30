@@ -1,4 +1,5 @@
 #pragma once
+#include "pet.h"
 
 #include <windows.h>
 #include<iostream>
