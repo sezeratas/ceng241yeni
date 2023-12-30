@@ -23,11 +23,20 @@ void AddAdds() {
 
 }
 void AddPet() {
-
+	int chc;
+	cout << "Select a pet type: " << endl;
+	cout << "1.Dog" << endl;
+	cout << "2.Cat" << endl;
+	cout << "3.Bird" << endl;
+	cout << "4.Exit" << endl;
+	cin >> chc;
+	if (chc == 1) {
+		
+	}
 }
 
 void AddPerson() {
-
+	//cout << "Input the person type"
 }
 void DeleteAdds() {
 
@@ -41,7 +50,7 @@ void DeletePerson() {
 }
 
 void ShowAdds() {
-
+	for(int i =0; i<)
 }
 
 void EditAdds() {
