@@ -19,7 +19,6 @@ Add::~Add() {
 
 // Pet
 
-
 //  Person
 Person::Person() {
 	name = "-Not known-";
