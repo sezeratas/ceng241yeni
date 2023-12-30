@@ -18,31 +18,7 @@ Add::~Add() {
 }
 
 // Pet
-Pet::Pet() {
-	species = "-Not known-";
-	gender = "-Not known-";
-	age = "-Not known-";
-	locationFound = "-Not known-";
-	petDescription = "-Not known-";
 
-	cout << "New pet created" << endl << endl;
-}
-
-Pet::Pet(string species, string gender, string age, string locationFound, string petDescription) {
-
-	this->species = species;
-	this->gender = gender;
-	this->age = age;
-	this->locationFound = locationFound;
-	this->petDescription = petDescription;
-
-
-	cout << "New pet created." << endl << endl;
-}
-
-Pet::~Pet() {
-	cout << "Pet deleted." << endl << endl;
-}
 
 //  Person
 Person::Person() {
@@ -64,84 +40,46 @@ Person::~Person() {
 
 // Adds
 int Add::getAddId() {
-
+	return NULL;
 }
 void Add::setAddId(int id) {
 
 }
 
 string Add::getAddDate() {
-
+	return NULL;
 }
 void Add::setAddDate(string addDate) {
 
 }
 
 //  Pets
-string Pet::getSpecies() {
 
-}
-void Pet::setSpecies(string species) {
-
-}
-
-string Pet::getGender() {
-
-}
-void Pet::setGender(string gender) {
-
-}
-
-string Pet::getAge() {
-
-}
-void Pet::setAge(string age) {
-
-}
-
-string Pet::getLocationFound() {
-
-}
-void Pet::setLocationFound(string locationfound) {
-
-}
-
-string Pet::getPetDescription() {
-
-}
-void Pet::setPetDescription(string petDescription) {
-
-}
-
-string Pet::getGender() {
-}
-void Pet::setGender(string gender) {
-}
 
 //  Person
 string Person::getName() {
-
+	return NULL;
 }
 void  Person::setName(string name) {
-
+	
 }
 
 string Person::getSurname() {
-
+	return NULL;
 }
 void  Person::setSurname(string surname) {
-
+	
 }
 
 string Person::getPhoneNumber() {
-
+	return NULL;
 }
 void  Person::setPhoneNumber(string phoneNumber) {
 
 }
 
 string Person::getEmailAddress() {
-
+	return NULL;
 }
 void  Person::setEmailAddress(string emailAddress) {
 

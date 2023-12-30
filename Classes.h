@@ -1,5 +1,3 @@
-#pragma once
-
 #include<iostream>
 
 using namespace std;
@@ -20,37 +18,9 @@ public:
     ~Add();
 };
 
-class Pet : Add {
 
-public:
-    string species;
-    string gender;
-    string age;
-    string locationFound;
-    string petDescription;
 
-    Pet();
-    Pet(string, string, string, string, string);  // Constructor overloading for animals's multiple pet.
-    ~Pet();
-
-    string getSpecies();
-    void setSpecies(string species);
-
-    string getGender();
-    void setGender(string gender);
-
-    string getAge();
-    void setAge(string page);
-
-    string getLocationFound();
-    void setLocationFound(string locationfound);
-
-    string getPetDescription();
-    void setPetDescription(string petDescription);
-
-};
-
-class Person : Add {
+class Person {
 protected:
     string name;
     string surname;
