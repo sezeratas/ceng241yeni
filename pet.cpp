@@ -27,7 +27,6 @@ Pet::Pet(string species,string gender,int age,string locationFound,string petDes
 	this->locationFound = locationFound;
 	this->petDescription = petDescription;
 
-
 	cout << "New pet created." << endl << endl;
 }
 

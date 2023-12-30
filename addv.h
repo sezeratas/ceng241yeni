@@ -7,11 +7,11 @@ public:
     int addId;
     string addDate;
 
-    int getAddId();
-    void setAddId(int addId);
+    int getaddvId();
+    void setaddvId(int addId);
 
-    string getAddDate();
-    void setAddDate(string addDate);
+    string getaddvDate();
+    void setaddvDate(string addDate);
 
     addv();
     addv(int AddId, string AddDate);

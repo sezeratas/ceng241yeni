@@ -1,24 +1,9 @@
 #include "person.h"
-#include "Classes.h"
+//#include "Classes.h"
 #include <string>
 #include <vector>
 
 using namespace std;
-
-// Adds
-Add::Add() {
-	int addId;
-}
-Add::Add(int addId, string addDate) {
-	this->addId = addId;
-	this->addDate = addDate;
-}
-
-Add::~Add() {
-	cout << "Add deleted." << endl << endl;
-}
-
-// Pet
 
 //  Person
 Person::Person() {
