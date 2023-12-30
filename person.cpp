@@ -1,3 +1,4 @@
+#include "person.h"
 #include "Classes.h"
 #include <string>
 #include <vector>
@@ -37,37 +38,18 @@ Person::~Person() {
 	cout << "Person deleted." << endl << endl;
 }
 
-// Adds
-int Add::getAddId() {
-	return NULL;
-}
-void Add::setAddId(int id) {
-
-}
-
-string Add::getAddDate() {
-	return NULL;
-}
-void Add::setAddDate(string addDate) {
-
-}
-
-//  Pets
-
-
-//  Person
 string Person::getName() {
 	return NULL;
 }
 void  Person::setName(string name) {
-	
+
 }
 
 string Person::getSurname() {
 	return NULL;
 }
 void  Person::setSurname(string surname) {
-	
+
 }
 
 string Person::getPhoneNumber() {

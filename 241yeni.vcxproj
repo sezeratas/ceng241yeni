@@ -127,14 +127,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="addv.cpp" />
+    <ClCompile Include="kedi.cpp" />
+    <ClCompile Include="köpek.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Classes.cpp" />
+    <ClCompile Include="person.cpp" />
     <ClCompile Include="pet.cpp" />
+    <ClCompile Include="student.cpp" />
+    <ClCompile Include="teacher.cpp" />
+    <ClCompile Include="visitor.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Classes.h" />
+    <ClInclude Include="addv.h" />
+    <ClInclude Include="kedi.h" />
+    <ClInclude Include="köpek.h" />
     <ClInclude Include="mainF.h" />
+    <ClInclude Include="person.h" />
     <ClInclude Include="pet.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="student.h" />
+    <ClInclude Include="teacher.h" />
+    <ClInclude Include="visitor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="241yeni.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

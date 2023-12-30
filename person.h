@@ -2,21 +2,6 @@
 
 using namespace std;
 
-class Add {
-public:
-    int addId;
-    string addDate;
-
-    int getAddId();
-    void setAddId(int addId);
-
-    string getAddDate();
-    void setAddDate(string addDate);
-
-    Add();
-    Add(int AddId, string AddDate);
-    ~Add();
-};
 
 
 
