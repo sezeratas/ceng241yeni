@@ -5,27 +5,34 @@
 using namespace std;
 
 // Adds
-addv::addv() {
+Adds::Adds() {
 	int addId;
 }
-addv::addv(int addId, string addDate) {
+Adds::Adds(int addId, string addDate) {
 	this->addId = addId;
 	this->addDate = addDate;
 }
 
-addv::~addv() {
+Adds::~Adds() {
 	cout << "Add deleted." << endl << endl;
 }
-int addv::getAddvId() {
+int Adds::getAddvId() {
 	return NULL;
 }
-void addv::setAddvId(int id) {
+void Adds::setAddvId(int id) {
 
 }
 
-string addv::getAddvDate() {
+string Adds::getAddvDate() {
 	return NULL;
 }
-void addv::setAddvDate(string addDate) {
+void Adds::setAddvDate(string addDate) {
+
+}
+
+Person Adds::getPerson() {
+	return NULL;
+}
+void Adds::setPerson(Person person) {
 
 }

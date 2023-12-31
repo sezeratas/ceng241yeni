@@ -1,9 +1,10 @@
 #pragma once
 #include<iostream>
+#include "person.h"
 
 using namespace std;
 
-class addv {
+class Adds {
 public:
     int addId;
     string addDate;
@@ -14,7 +15,12 @@ public:
     string getAddvDate();
     void setAddvDate(string addDate);
 
-    addv();
-    addv(int AddId, string AddDate);
-    ~addv();
+    Person getPerson();
+    void setPerson(Person person);
+
+    Adds();
+    Adds(int AddId, string AddDate);
+    ~Adds();
+
+    Person person;
 };
