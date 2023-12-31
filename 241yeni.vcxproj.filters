@@ -36,10 +36,10 @@
     <ClCompile Include="visitor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="kedi.cpp">
+    <ClCompile Include="cat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="köpek.cpp">
+    <ClCompile Include="dog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -68,10 +68,10 @@
     <ClInclude Include="visitor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="kedi.h">
+    <ClInclude Include="cat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="köpek.h">
+    <ClInclude Include="dog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

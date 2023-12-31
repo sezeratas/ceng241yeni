@@ -128,8 +128,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="addv.cpp" />
-    <ClCompile Include="kedi.cpp" />
-    <ClCompile Include="köpek.cpp" />
+    <ClCompile Include="cat.cpp" />
+    <ClCompile Include="dog.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="person.cpp" />
     <ClCompile Include="pet.cpp" />
@@ -139,8 +139,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="addv.h" />
-    <ClInclude Include="kedi.h" />
-    <ClInclude Include="köpek.h" />
+    <ClInclude Include="cat.h" />
+    <ClInclude Include="dog.h" />
     <ClInclude Include="mainF.h" />
     <ClInclude Include="person.h" />
     <ClInclude Include="pet.h" />

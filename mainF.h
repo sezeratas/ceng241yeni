@@ -3,8 +3,8 @@
 #include <string>
 
 #include "pet.h"
-#include "köpek.h"
-#include "kedi.h"
+#include "dog.h"
+#include "cat.h"
 
 #include "person.h"
 #include "student.h"
@@ -15,7 +15,11 @@
 
 using namespace std;
 
-void AddAdds();
+vector<addv*> addvector;
+vector<Person*> personvector;
+vector<Pet*> petvector;
+
+void AddAdds(Person* addv);
 void AddPet();
 void AddPerson();
 void DeleteAdds();
@@ -36,7 +40,7 @@ void mainScreen() {
 	cout << "5.Exit" << endl;
 }
 
-void AddAdds() {
+void AddAdds(&addvector) {
 	AddPerson();
 	AddPet();
 }
@@ -130,15 +134,8 @@ void AddPet() {
 
 void AddPerson() {
 
-	//Pet* pet = new Pet();
-
 	int chc;
-	string species;
-	string breed;
-	string gender;
-	int age;
-	string locationFound;
-	string petDescription;
+	
 	cout << "Select a person type: " << endl;
 	cout << "1.Student: " << endl;
 	cout << "2.Teacher: " << endl;
@@ -151,7 +148,29 @@ void AddPerson() {
 		string studentNumber;
 		string department;
 
+		string name;
+		string surname;
+		string phoneNumber;
+		string emailAddress;
+
 		student* Student = new student();
+
+		cout << "Input the student's name: ";
+		cin >> name;
+		Student->setName(name);
+
+		cout << "Input the student's surname: ";
+		getline(cin, surname);
+		Student->setSurname(surname);
+
+		cout << "Input the student's phone number: ";
+		cin >> phoneNumber;
+		Student->setPhoneNumber(phoneNumber);
+
+		cout << "Input the student's email address: ";
+		cin >> emailAddress;
+		Student->setEmailAddress(emailAddress);
+
 
 		cout << "Input the student's grade: ";
 		cin >> grade;
@@ -172,7 +191,28 @@ void AddPerson() {
 		string sicilNo;
 		string roomNo;
 
+		string name;
+		string surname;
+		string phoneNumber;
+		string emailAddress;
+
 		teacher* Teacher = new teacher();
+
+		cout << "Input the student's name: ";
+		cin >> name;
+		Teacher->setName(name);
+
+		cout << "Input the student's surname: ";
+		getline(cin, surname);
+		Teacher->setSurname(surname);
+
+		cout << "Input the student's phone number: ";
+		cin >> phoneNumber;
+		Teacher->setPhoneNumber(phoneNumber);
+
+		cout << "Input the student's email address: ";
+		cin >> emailAddress;
+		Teacher->setEmailAddress(emailAddress);
 
 		cout << "Input the teacher's faculty: ";
 		getline(cin, faculty);
@@ -192,7 +232,28 @@ void AddPerson() {
 		int visitorNo;
 		string whoseVisitor;
 
+		string name;
+		string surname;
+		string phoneNumber;
+		string emailAddress;
+
 		visitor* Visitor = new visitor();
+
+		cout << "Input the student's name: ";
+		cin >> name;
+		Visitor->setName(name);
+
+		cout << "Input the student's surname: ";
+		getline(cin, surname);
+		Visitor->setSurname(surname);
+
+		cout << "Input the student's phone number: ";
+		cin >> phoneNumber;
+		Visitor->setPhoneNumber(phoneNumber);
+
+		cout << "Input the student's email address: ";
+		cin >> emailAddress;
+		Visitor->setEmailAddress(emailAddress);
 
 		cout << "Input the visitor's visitorNo: ";
 		cin >> visitorNo;
