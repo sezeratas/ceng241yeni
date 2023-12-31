@@ -24,5 +24,5 @@ public:
     string getFur();
     void setFur(string fur);
 
-    SQLRETURN petAdd(SQLHANDLE SQLStatementHandle);
+    /*SQLRETURN petAdd(SQLHANDLE SQLStatementHandle);*/
 };

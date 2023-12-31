@@ -35,7 +35,7 @@ void Dog::setFur(string fur) {
 }
 
 
-SQLRETURN Pet::petAdd(SQLHANDLE SQLStatementHandle) {
+/*SQLRETURN Pet::petAdd(SQLHANDLE SQLStatementHandle) {
 	WCHAR wszInput[1000];
 
 	SQLRETURN retCode = 0;
@@ -51,4 +51,4 @@ SQLRETURN Pet::petAdd(SQLHANDLE SQLStatementHandle) {
 		cout << "FAILURE";
 
 	return retCode;
-}
+}*/

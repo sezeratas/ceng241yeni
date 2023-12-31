@@ -6,7 +6,7 @@ using namespace std;
 
 // Adds
 Adds::Adds() {
-	int addId;
+	int addId = 0;
 }
 Adds::Adds(int addId, string addDate) {
 	this->addId = addId;
@@ -27,12 +27,5 @@ string Adds::getAddvDate() {
 	return NULL;
 }
 void Adds::setAddvDate(string addDate) {
-
-}
-
-Person Adds::getPerson() {
-	return NULL;
-}
-void Adds::setPerson(Person person) {
 
 }

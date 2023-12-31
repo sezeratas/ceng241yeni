@@ -56,7 +56,7 @@ int main()
             Find();
             break;
         case 3:
-            AddAdds();
+            //AddAdds();
             break;
         case 4:
             EditAdds();
