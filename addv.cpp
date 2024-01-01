@@ -43,11 +43,11 @@ void EditAdds() {
 	// Bunun icinde delete islevi de olacak.
 }
 
-void AddAdds(vector<Adds*>* addv) {
+/*void AddAdds(vector<Adds*>* addv) {
 
-	Adds* adds = new Adds(1, "1.1.2024");
+	//Adds* adds = new Adds(1, "1.1.2024");
 
-	AddPerson(adds);
+	//Person::AddPerson();
 
-	addv->push_back(adds);
-}
+	//addv->push_back(adds);
+}*/

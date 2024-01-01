@@ -1,5 +1,4 @@
-#pragma once
-#include "pet.h"
+//#pragma once
 
 #include <windows.h>
 #include<iostream>
@@ -9,6 +8,7 @@
 #include <sql.h>
 #include <sqlext.h>
 
+#include "pet.h"
 
 using namespace std;
 
@@ -24,5 +24,5 @@ public:
     string getCatHair();
     void setCatHair(string catHair);
 
-    SQLRETURN petAdd(SQLHANDLE SQLStatementHandle);
+    //SQLRETURN petAdd(SQLHANDLE SQLStatementHandle);
 };

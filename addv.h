@@ -24,7 +24,7 @@ public:
     void ShowAdds();
     void EditAdds();
 
-    void AddAdds(vector<Adds*>* addv);
+    //void AddAdds(vector<Adds*>* person);
 
-    Person person;
+    Person person1;
 };

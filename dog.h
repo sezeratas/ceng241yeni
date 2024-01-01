@@ -23,7 +23,6 @@ public:
 
     string getFur();
     void setFur(string fur);
-    void AddDog();
 
     /*SQLRETURN petAdd(SQLHANDLE SQLStatementHandle);*/
 };

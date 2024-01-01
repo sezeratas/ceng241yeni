@@ -14,7 +14,7 @@ protected:
 
 public:
 
-    vector<Pet*> petVector;
+    //vector<Pet*> petVector;
 
     //Constructor and Destructor
     Person();
@@ -36,6 +36,6 @@ public:
     void setEmailAddress(string emailAddress);
 
     void AddPerson();
-    void AddPerson(Adds* adds);
+    //void AddPerson(Adds* adds);
     void DeletePerson();
 };

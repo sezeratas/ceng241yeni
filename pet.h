@@ -1,12 +1,11 @@
-#pragma once
-
+//#pragma once
 #include <windows.h>
 #include<iostream>
+#include <string>
 #include <stdio.h>
 #include <stdlib.h>
 #include <sql.h>
 #include <sqlext.h>
-
 
 using namespace std;
 
@@ -20,7 +19,7 @@ public:
     string petDescription;
 
     Pet();
-    Pet(string, string, int, string, string);  // Constructor overloading for animals's multiple pet.
+    Pet(string species, string gender, int age, string locationFound, string petDescription);  // Constructor overloading for animals's multiple pet.
     ~Pet();
 
     string getSpecies();
@@ -38,9 +37,9 @@ public:
     string getPetDescription();
     void setPetDescription(string petDescription);
 
-    void AddPet();
+    void addPet();
     //void AddPet(Person* person);
     void DeletePet();
     
-    SQLRETURN petAdd(SQLHANDLE SQLStatementHandle);
+    //SQLRETURN petAdd(SQLHANDLE SQLStatementHandle);
 };

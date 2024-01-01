@@ -1,6 +1,5 @@
 #include "cat.h"
 
-#include "pet.h"
 #include <string>
 #pragma warning(push)
 #pragma warning(disable: 4995)

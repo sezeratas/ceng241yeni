@@ -51,7 +51,7 @@ void  Person::setEmailAddress(string emailAddress) {
 
 }
 
-void AddPerson() {
+/*void AddPerson() {
 
 	int chc;
 
@@ -185,9 +185,9 @@ void AddPerson() {
 	else if (chc == 4) {
 
 	}
-}
+}*/
 
-void AddPerson(Adds* adds) {
+/*void AddPerson(Adds* adds) {
 
 	int chc;
 
@@ -346,7 +346,7 @@ void AddPerson(Adds* adds) {
 	}
 
 	AddPet(&(adds->person));
-}
+}*/
 
 void DeletePerson() {
 

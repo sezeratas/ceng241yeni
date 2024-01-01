@@ -1,6 +1,4 @@
 #include "pet.h"
-//#include "Classes.h"
-#include "mainF.h"
 //#include <conio.h>
 //#include <tchar.h>
 //#include <sal.h>
@@ -13,12 +11,38 @@ using namespace std;
 
 int main()
 {
-    vector<Adds*>* addv{};
+    vector<Pet*> petV;
+    //AddAdds(addv);
+    //Show(*addv);
 
-    AddAdds(addv);
-    Show(*addv);
+    string species, gender, locationFound, petDescription;
+    int age;
 
-    Pet::AddPet();
+    cout << "Input the pet's species: ";
+    cin.ignore();
+    getline(cin, species);
+    //setSpecies(species);
+
+    std::cout << "Input the pet's gender: ";
+    getline(cin, gender);
+    //setGender(gender);
+
+    cout << "Input the pet's age: ";
+    cin >> age;
+    //setAge(age);
+
+    cout << "Input the pet's location lost (or found): ";
+    cin.ignore();
+    getline(cin, locationFound);
+    //setLocationFound(locationFound);
+
+    cout << "Input the pet's description: ";
+    cin.ignore();
+    getline(cin, petDescription);
+    //setPetDescription(petDescription);
+    
+    Pet pet1(species, gender, age, locationFound, petDescription);
+
 
     /*SQLRETURN retCode = 0;
     SQLHANDLE SQLStatementHandle = NULL;
