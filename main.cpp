@@ -4,6 +4,7 @@
 //#include <conio.h>
 //#include <tchar.h>
 //#include <sal.h>
+#include <vector>
 
 
 
@@ -12,7 +13,11 @@ using namespace std;
 
 int main()
 {
-    SQLRETURN retCode = 0;
+    vector<Adds*>* addv{};
+
+    AddAdds(addv);
+    Show(*addv);
+    /*SQLRETURN retCode = 0;
     SQLHANDLE SQLStatementHandle = NULL;
     HENV henv = NULL;
     HDBC hdbc = NULL;
@@ -74,7 +79,7 @@ int main()
 
     SQLFreeHandle(SQL_HANDLE_DBC, hdbc);
 
-    SQLFreeHandle(SQL_HANDLE_ENV, henv);
+    SQLFreeHandle(SQL_HANDLE_ENV, henv);*/
 
 
     return 0;

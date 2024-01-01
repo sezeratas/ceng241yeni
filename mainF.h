@@ -47,6 +47,21 @@ void AddAdds(vector<Adds*>* addv) {
 	Adds* adds = new Adds();
 
 	AddPerson(adds);
+
+	addv->push_back(adds);
+}
+
+void Show(vector<Adds*> addv) {
+	cout << (addv)[0]->person.getName() << endl;
+	cout << (addv)[0]->person.getSurname() << endl;
+	cout << (addv)[0]->person.getPhoneNumber() << endl;
+	cout << (addv)[0]->person.getEmailAddress() << endl <<endl;
+
+	cout << (addv)[0]->person.petVector[0]->getAge() << endl;
+	cout << (addv)[0]->person.petVector[1]->getGender() << endl;
+	cout << (addv)[0]->person.petVector[2]->getLocationFound() << endl;
+	cout << (addv)[0]->person.petVector[3]->getPetDescription() << endl;
+	cout << (addv)[0]->person.petVector[4]->getSpecies() << endl;
 }
 
 void AddPet() {

@@ -7,6 +7,7 @@ using namespace std;
 // Adds
 Adds::Adds() {
 	int addId = 0;
+	string addDate = "-Not Known-";
 }
 Adds::Adds(int addId, string addDate) {
 	this->addId = addId;
