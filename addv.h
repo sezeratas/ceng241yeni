@@ -20,5 +20,11 @@ public:
     Adds(int AddId, string AddDate);
     ~Adds();
 
+    void DeleteAdds();
+    void ShowAdds();
+    void EditAdds();
+
+    void AddAdds(vector<Adds*>* addv);
+
     Person person;
 };

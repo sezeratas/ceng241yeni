@@ -34,4 +34,8 @@ public:
 
     string getEmailAddress();
     void setEmailAddress(string emailAddress);
+
+    void AddPerson();
+    void AddPerson(Adds* adds);
+    void DeletePerson();
 };

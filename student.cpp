@@ -21,7 +21,7 @@ student::student(int grade, string studentNumber, string department) {
 	this->grade = grade;
 	this->studentNumber = studentNumber;
 	this->department = department;
-	cout << "New person created." << endl << endl;
+	cout << "New student created." << endl << endl;
 }
 
 student::~student() {
@@ -47,6 +47,8 @@ string student::getDepartment() {
 void student::setDepartment(string department) {
 	this->studentNumber = studentNumber;
 }
+
+
 
 /*SQLRETURN Pet::petAdd(SQLHANDLE SQLStatementHandle) {
 	WCHAR wszInput[1000];

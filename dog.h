@@ -18,11 +18,12 @@ public:
     string fur;
 
     Dog();
-    Dog(string fur);  // Constructor overloading for animals's multiple pet.
+    Dog(string fur, string species, string gender, int age, string locationFound, string petDescription);  // Constructor overloading for animals's multiple pet.
     ~Dog();
 
     string getFur();
     void setFur(string fur);
+    void AddDog();
 
     /*SQLRETURN petAdd(SQLHANDLE SQLStatementHandle);*/
 };

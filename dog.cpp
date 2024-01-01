@@ -17,7 +17,7 @@ Dog::Dog() {
 	cout << "New dog created" << endl << endl;
 }
 
-Dog::Dog(string fur) {
+Dog::Dog(string fur, string species, string gender, int age, string locationFound, string petDescription) : Pet(species, gender, age, locationFound, petDescription) {
 
 	this->fur = fur;
 
@@ -32,6 +32,15 @@ string Dog::getFur() {
 }
 void Dog::setFur(string fur) {
 	this->fur = fur;
+}
+
+void Dog::AddDog() {
+
+	cout << "Input the dogs fur: " << endl;
+	getline(cin, fur);
+	cin.ignore();
+
+	Dog* dog = new Dog(fur, species, gender, age, locationFound, petDescription);
 }
 
 

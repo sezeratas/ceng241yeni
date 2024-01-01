@@ -30,3 +30,24 @@ string Adds::getAddvDate() {
 void Adds::setAddvDate(string addDate) {
 
 }
+
+void DeleteAdds() {
+
+}
+
+void ShowAdds() {
+	//for(int i =0; i<)
+}
+
+void EditAdds() {
+	// Bunun icinde delete islevi de olacak.
+}
+
+void AddAdds(vector<Adds*>* addv) {
+
+	Adds* adds = new Adds(1, "1.1.2024");
+
+	AddPerson(adds);
+
+	addv->push_back(adds);
+}

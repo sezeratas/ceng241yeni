@@ -17,6 +17,9 @@ int main()
 
     AddAdds(addv);
     Show(*addv);
+
+    Pet::AddPet();
+
     /*SQLRETURN retCode = 0;
     SQLHANDLE SQLStatementHandle = NULL;
     HENV henv = NULL;

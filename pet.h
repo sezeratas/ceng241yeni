@@ -2,7 +2,6 @@
 
 #include <windows.h>
 #include<iostream>
-#include <vector>
 #include <stdio.h>
 #include <stdlib.h>
 #include <sql.h>
@@ -38,6 +37,10 @@ public:
 
     string getPetDescription();
     void setPetDescription(string petDescription);
+
+    void AddPet();
+    //void AddPet(Person* person);
+    void DeletePet();
     
     SQLRETURN petAdd(SQLHANDLE SQLStatementHandle);
 };
