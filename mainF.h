@@ -44,7 +44,7 @@ void mainScreen() {
 
 void AddAdds(vector<Adds*>* addv) {
 
-	Adds* adds = new Adds();
+	Adds* adds = new Adds(1,"1.1.2024");
 
 	AddPerson(adds);
 
@@ -188,10 +188,12 @@ void AddPet(Person* person) {
 	if (chc == 1) {
 		cout << "Input the animal's species: ";
 		getline(cin, species);
+		cin.ignore();
 		pet->setSpecies(species);
 
 		cout << "Input the animal's gender: ";
 		getline(cin, gender);
+		cin.ignore();
 		pet->setGender(gender);
 
 		cout << "Input the animal's age: ";
@@ -200,10 +202,12 @@ void AddPet(Person* person) {
 
 		cout << "Input the animal's location lost (or found): ";
 		getline(cin, locationFound);
+		cin.ignore();
 		pet->setLocationFound(locationFound);
 
 		cout << "Input the animal's descrition: ";
 		getline(cin, petDescription);
+		cin.ignore();
 		pet->setPetDescription(petDescription);
 
 		person->petVector.push_back(pet);
@@ -212,10 +216,12 @@ void AddPet(Person* person) {
 	else if (chc == 2) {
 		cout << "Input the animal's species: ";
 		getline(cin, species);
+		cin.ignore();
 		pet->setSpecies(species);
 
 		cout << "Input the animal's gender: ";
 		getline(cin, gender);
+		cin.ignore();
 		pet->setGender(gender);
 
 		cout << "Input the animal's age: ";
@@ -224,20 +230,24 @@ void AddPet(Person* person) {
 
 		cout << "Input the animal's location lost (or found): ";
 		getline(cin, locationFound);
+		cin.ignore();
 		pet->setLocationFound(locationFound);
 
 		cout << "Input the animal's descrition: ";
 		getline(cin, petDescription);
+		cin.ignore();
 		pet->setPetDescription(petDescription);
 	}
 
 	else if (chc == 3) {
 		cout << "Input the animal's species: ";
 		getline(cin, species);
+		cin.ignore();
 		pet->setSpecies(species);
 
 		cout << "Input the animal's gender: ";
 		getline(cin, gender);
+		cin.ignore();
 		pet->setGender(gender);
 
 		cout << "Input the animal's age: ";
@@ -246,10 +256,12 @@ void AddPet(Person* person) {
 
 		cout << "Input the animal's location lost (or found): ";
 		getline(cin, locationFound);
+		cin.ignore();
 		pet->setLocationFound(locationFound);
 
 		cout << "Input the animal's descrition: ";
 		getline(cin, petDescription);
+		cin.ignore();
 		pet->setPetDescription(petDescription);
 	}
 	else if (chc == 4) {
@@ -414,24 +426,27 @@ void AddPerson(Adds* adds) {
 		string phoneNumber;
 		string emailAddress;
 
-		student* Student = new student();
+		student* Student = new student(0,"aaa","bbb");
 
 		cout << "Input the student's name: ";
-		cin >> name;
+		getline(cin,name);
+		cin.ignore();
 		Student->setName(name);
 
 		cout << "Input the student's surname: ";
 		getline(cin, surname);
+		cin.ignore();
 		Student->setSurname(surname);
 
 		cout << "Input the student's phone number: ";
-		cin >> phoneNumber;
+		getline(cin, phoneNumber);
+		cin.ignore();
 		Student->setPhoneNumber(phoneNumber);
 
 		cout << "Input the student's email address: ";
-		cin >> emailAddress;
+		getline(cin, emailAddress);
+		cin.ignore();
 		Student->setEmailAddress(emailAddress);
-
 
 		cout << "Input the student's grade: ";
 		cin >> grade;
@@ -439,10 +454,12 @@ void AddPerson(Adds* adds) {
 
 		cout << "Input the student's studentNumber: ";
 		getline(cin, studentNumber);
+		cin.ignore();
 		Student->setStudentNumber(studentNumber);
 
 		cout << "Input the student's department: ";
-		cin >> department;
+		getline(cin, department);
+		cin.ignore();
 		Student->setDepartment(department);
 
 		adds->person = *Student;
@@ -462,7 +479,8 @@ void AddPerson(Adds* adds) {
 		teacher* Teacher = new teacher();
 
 		cout << "Input the student's name: ";
-		cin >> name;
+		getline(cin,name);
+		cin.ignore();
 		Teacher->setName(name);
 
 		cout << "Input the student's surname: ";
@@ -470,23 +488,28 @@ void AddPerson(Adds* adds) {
 		Teacher->setSurname(surname);
 
 		cout << "Input the student's phone number: ";
-		cin >> phoneNumber;
+		getline(cin, phoneNumber);
+		cin.ignore();
 		Teacher->setPhoneNumber(phoneNumber);
 
 		cout << "Input the student's email address: ";
-		cin >> emailAddress;
+		getline(cin, emailAddress);
+		cin.ignore();
 		Teacher->setEmailAddress(emailAddress);
 
 		cout << "Input the teacher's faculty: ";
 		getline(cin, faculty);
+		cin.ignore();
 		Teacher->setFaculty(faculty);
 
 		cout << "Input the teacher's sicilNo: ";
 		getline(cin, sicilNo);
+		cin.ignore();
 		Teacher->setSicilNo(sicilNo);
 
 		cout << "Input the teacher's roomNo: ";
-		cin >> roomNo;
+		getline(cin, roomNo);
+		cin.ignore();
 		Teacher->setRoomNo(roomNo);
 
 		adds->person = *Teacher;
@@ -505,19 +528,23 @@ void AddPerson(Adds* adds) {
 		visitor* Visitor = new visitor();
 
 		cout << "Input the student's name: ";
-		cin >> name;
+		getline(cin,name);
+		cin.ignore();
 		Visitor->setName(name);
 
 		cout << "Input the student's surname: ";
 		getline(cin, surname);
+		cin.ignore();
 		Visitor->setSurname(surname);
 
 		cout << "Input the student's phone number: ";
-		cin >> phoneNumber;
+		getline(cin, phoneNumber);
+		cin.ignore();
 		Visitor->setPhoneNumber(phoneNumber);
 
 		cout << "Input the student's email address: ";
-		cin >> emailAddress;
+		getline(cin, emailAddress);
+		cin.ignore();
 		Visitor->setEmailAddress(emailAddress);
 
 		cout << "Input the visitor's visitorNo: ";
@@ -526,6 +553,7 @@ void AddPerson(Adds* adds) {
 
 		cout << "Input the visitor's whoseVisitor: ";
 		getline(cin, whoseVisitor);
+		cin.ignore();
 		Visitor->setWhoseVisitor(whoseVisitor);
 
 		adds->person = *Visitor;
