@@ -12,7 +12,7 @@ void ShowAll();
 void MainScreen();
 
 void MainScreen() {
-	cout << "Stray Animals Platform" << endl;
+	cout << "\033[1;34mStray Animals Platform" << endl;
 	cout << "Please choose the operation:" << endl;
 	cout << "1.Enter an advertisements" << endl;
 	cout << "2.Show all advertisements." << endl;

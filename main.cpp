@@ -170,39 +170,42 @@ int main()
                 Student* st1 = new Student(name, surname, phoneNumber, emailAddress, grade, studentNumber, department);
 
                 int petchc;
-                cout << "Input the pet's type: "<< endl;
-                cout << "1.Dog " << endl;
-                cout << "2.Cat" << endl;
-                cin >> petchc;
-                if (petchc == 1) {
+                bool returnToMainMenu = false;
+                do{
+                    cout << "Input the pet's type: " << endl;
+                    cout << "1.Dog " << endl;
+                    cout << "2.Cat" << endl;
+                    cout << "3.Return the main menu." << endl;
+                    cin >> petchc;
+                    if (petchc == 1) {
 
-                    string species;
-                    string gender;
-                    int age;
-                    string locationFound;
-                    string petDescription;
+                        string species;
+                        string gender;
+                        int age;
+                        string locationFound;
+                        string petDescription;
 
-                    string fur;
+                        string fur;
 
-                    cin.ignore();
-                    cout << "Input the dog's species: ";
-                    getline(cin, species);
+                        cin.ignore();
+                        cout << "Input the dog's species: ";
+                        getline(cin, species);
 
-                    cout << "Input the dog's gender: ";
-                    getline(cin, gender);
+                        cout << "Input the dog's gender: ";
+                        getline(cin, gender);
 
-                    cout << "Input the dog's age: ";
-                    cin >> age;
+                        cout << "Input the dog's age: ";
+                        cin >> age;
 
-                    cin.ignore();
-                    cout << "Input the dog's locationFound: ";
-                    getline(cin, locationFound);
+                        cin.ignore();
+                        cout << "Input the dog's locationFound: ";
+                        getline(cin, locationFound);
 
-                    cout << "Input the dog's petDescription: ";
-                    getline(cin, petDescription);
+                        cout << "Input the dog's petDescription: ";
+                        getline(cin, petDescription);
 
-                    cout << "Input the dog's fur: ";
-                    getline(cin, fur);
+                        cout << "Input the dog's fur: ";
+                        getline(cin, fur);
 
                     /*Dog dog1(fur, species, gender, age, locationFound, petDescription);
                     Adds advertisement1(addCounter, addDate, student1, dog1);*/
@@ -211,51 +214,50 @@ int main()
                     Adds* adds1 = new Adds(addCounter, addDate, *st1, *dog1);
 
                     addsV.push_back(adds1);
-
-                    break;
                 }
 
-                else if (petchc == 2) {
+                    else if (petchc == 2) {
 
-                    string species;
-                    string gender;
-                    int age;
-                    string locationFound;
-                    string petDescription;
+                        string species;
+                        string gender;
+                        int age;
+                        string locationFound;
+                        string petDescription;
 
-                    string catHair;
+                        string catHair;
 
-                    cin.ignore();
-                    cout << "Input the cat's species: ";
-                    getline(cin, species);
+                        cin.ignore();
+                        cout << "Input the cat's species: ";
+                        getline(cin, species);
 
-                    cout << "Input the cat's gender: ";
-                    getline(cin, gender);
+                        cout << "Input the cat's gender: ";
+                        getline(cin, gender);
 
-                    cout << "Input the cat's age: ";
-                    cin >> age;
+                        cout << "Input the cat's age: ";
+                        cin >> age;
 
-                    cin.ignore();
-                    cout << "Input the cat's locationFound: ";
-                    getline(cin, locationFound);
+                        cin.ignore();
+                        cout << "Input the cat's locationFound: ";
+                        getline(cin, locationFound);
 
-                    cout << "Input the cat's petDescription: ";
-                    getline(cin, petDescription);
+                        cout << "Input the cat's petDescription: ";
+                        getline(cin, petDescription);
 
-                    cout << "Input the cat's cat hairs: ";
-                    getline(cin, catHair);
+                        cout << "Input the cat's cat hairs: ";
+                        getline(cin, catHair);
 
-                    Cat *cat1 = new Cat(catHair, species, gender, age, locationFound, petDescription);
-                    Adds *adds1 = new Adds(addCounter, addDate, *st1, *cat1);
-
-                    addsV.push_back(adds1);
-
-                    /*Cat cat1(catHair, species, gender, age, locationFound, petDescription);
-                    Adds advertisement1(addCounter, addDate, student1, cat1);*/
-
-                    break;
-                }
-            }
+                        Cat cat1(catHair, species, gender, age, locationFound, petDescription);
+                        Adds advertisement1(addCounter, addDate, student1, cat1);
+                    }
+                    else if (petchc == 3) {
+                        returnToMainMenu = true;
+                        break;
+                    }
+                    else
+                    {
+                    cout << "Invalid choice.Please choose 1-3. ";
+                    }
+                }while (petchc != 3);
 
                 else if (personChc == 2) {
 
@@ -296,39 +298,43 @@ int main()
                 teacher* teacher1 = new teacher(name, surname, phoneNumber, emailAddress, faculty, sicilNo, roomNo);
 
                 int petchc;
-                cout << "Input the pet's type: " << endl;
-                cout << "1.Dog " << endl;
-                cout << "2.Cat" << endl;
-                cin >> petchc;
-                if (petchc == 1) {
+                bool returnToMainMenu = false;
+                do{
+                    cout << "Input the pet's type: " << endl;
+                    cout << "1.Dog " << endl;
+                    cout << "2.Cat" << endl;
+                    cout << "3.Return the main menu." << endl;
+                    cin >> petchc;
 
-                    string species;
-                    string gender;
-                    int age;
-                    string locationFound;
-                    string petDescription;
+                    if (petchc == 1) {
 
-                    string fur;
+                        string species;
+                        string gender;
+                        int age;
+                        string locationFound;
+                        string petDescription;
 
-                    cin.ignore();
-                    cout << "Input the dog's species: ";
-                    getline(cin, species);
+                        string fur;
 
-                    cout << "Input the dog's gender: ";
-                    getline(cin, gender);
+                        cin.ignore();
+                        cout << "Input the dog's species: ";
+                        getline(cin, species);
 
-                    cout << "Input the dog's age: ";
-                    cin >> age;
+                        cout << "Input the dog's gender: ";
+                        getline(cin, gender);
 
-                    cin.ignore();
-                    cout << "Input the dog's locationFound: ";
-                    getline(cin, locationFound);
+                        cout << "Input the dog's age: ";
+                        cin >> age;
 
-                    cout << "Input the dog's petDescription: ";
-                    getline(cin, petDescription);
+                        cin.ignore();
+                        cout << "Input the dog's locationFound: ";
+                        getline(cin, locationFound);
 
-                    cout << "Input the dog's fur: ";
-                    getline(cin, fur);
+                        cout << "Input the dog's petDescription: ";
+                        getline(cin, petDescription);
+
+                        cout << "Input the dog's fur: ";
+                        getline(cin, fur);
 
                     /*Dog dog1(fur, species, gender, age, locationFound, petDescription);
                     Adds advertisement1(addCounter, addDate, teacher1, dog1);*/
@@ -337,39 +343,37 @@ int main()
                     Adds* adds1 = new Adds(addCounter, addDate, *teacher1, *dog1);
 
                     addsV.push_back(adds1);
-
-                    break;
                 }
 
-                else if (petchc == 2) {
+                    else if (petchc == 2) {
 
-                    string species;
-                    string gender;
-                    int age;
-                    string locationFound;
-                    string petDescription;
+                        string species;
+                        string gender;
+                        int age;
+                        string locationFound;
+                        string petDescription;
 
-                    string catHair;
+                        string catHair;
 
-                    cin.ignore();
-                    cout << "Input the cat's species: ";
-                    getline(cin, species);
+                        cin.ignore();
+                        cout << "Input the cat's species: ";
+                        getline(cin, species);
 
-                    cout << "Input the cat's gender: ";
-                    getline(cin, gender);
+                        cout << "Input the cat's gender: ";
+                        getline(cin, gender);
 
-                    cout << "Input the cat's age: ";
-                    cin >> age;
+                        cout << "Input the cat's age: ";
+                        cin >> age;
 
-                    cin.ignore();
-                    cout << "Input the cat's locationFound: ";
-                    getline(cin, locationFound);
+                        cin.ignore();
+                        cout << "Input the cat's locationFound: ";
+                        getline(cin, locationFound);
 
-                    cout << "Input the cat's petDescription: ";
-                    getline(cin, petDescription);
+                        cout << "Input the cat's petDescription: ";
+                        getline(cin, petDescription);
 
-                    cout << "Input the cat's cat hairs: ";
-                    getline(cin, catHair);
+                        cout << "Input the cat's cat hairs: ";
+                        getline(cin, catHair);
 
                     /*Cat cat1(catHair, species, gender, age, locationFound, petDescription);
                     Adds advertisement1(addCounter, addDate, teacher1, cat1);*/
@@ -381,6 +385,14 @@ int main()
 
                     break;
                 }
+                    else if (petchc == 3) {
+                        returnToMainMenu = true;
+                        break;
+                    }
+                    else{
+                    cout << "Invalid choice.Please choose 1-3. ";
+                }
+                }while (petchc != 3);
             }
 
                 else if (personChc == 3) {
@@ -418,10 +430,13 @@ int main()
                 visitor* visitor1 = new visitor(name, surname, phoneNumber, emailAddress, visitorNo, whoseVisitor);
 
                 int petchc;
-                cout << "Input the pet's type: " << endl;
-                cout << "1.Dog " << endl;
-                cout << "2.Cat" << endl;
-                cin >> petchc;
+                bool returnToMainMenu = false;
+                do{
+                    cout << "Input the pet's type: " << endl;
+                    cout << "1.Dog " << endl;
+                    cout << "2.Cat" << endl;
+                    cout << "3.Return the main menu." << endl;
+                    cin >> petchc;
                 if (petchc == 1) {
 
                     string species;
@@ -459,8 +474,6 @@ int main()
                     Adds* adds1 = new Adds(addCounter, addDate, *visitor1, *dog1);
 
                     addsV.push_back(adds1);
-
-                    break;
                 }
 
                 else if (petchc == 2) {
@@ -500,9 +513,15 @@ int main()
                     Adds* adds1 = new Adds(addCounter, addDate, *visitor1, *cat1);
 
                     addsV.push_back(adds1);
-
+                }
+                else if (petchc == 3) {
+                    returnToMainMenu = true;
                     break;
                 }
+                else {
+                    cout << "Invalid choice.Please choose 1-3. ";
+                }
+                } while (petchc != 3);
 
             }
             case 2:
