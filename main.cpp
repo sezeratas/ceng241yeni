@@ -13,24 +13,31 @@ void ShowInfo(vector<Adds*> addsV, Student student1) {
 		cout << addsV[i]->getAddsId() << endl;
 		cout << addsV[i]->getAddsDate() << endl;
 
-        cout << addsV[i]->person1.getName() << endl;
-        cout << addsV[i]->person1.getSurname() << endl;
-        cout << addsV[i]->person1.getPhoneNumber() << endl;
-        cout << addsV[i]->person1.getEmailAddress() << endl;
+        cout << addsV[i]->student1.getName() << endl;
+        cout << addsV[i]->student1.getSurname() << endl;
+        cout << addsV[i]->student1.getPhoneNumber() << endl;
+        cout << addsV[i]->student1.getEmailAddress() << endl;
 
         cout << addsV[i]->student1.getGrade() << endl;
         cout << addsV[i]->student1.getStudentNumber() << endl;
         cout << addsV[i]->student1.getDepartment() << endl;
 
-        for(int j=0; j < addsV[i]->petVector.size(); j++) {
-			cout << addsV[i]->petVector[j]->getSpecies() << endl;
-			cout << addsV[i]->petVector[j]->getGender() << endl;
-			cout << addsV[i]->petVector[j]->getAge() << endl;
-			cout << addsV[i]->petVector[j]->getLocationFound() << endl;
-			cout << addsV[i]->petVector[j]->getPetDescription() << endl;
-			//cout << addsV[i]->petVector[j]->getFur() << endl;
-			//cout << addsV[i]->petVector[j]->getCatHair() << endl;
+        for(int j=0; j < addsV[i]->dogVector.size(); j++) {
+			cout << addsV[i]->dogVector[j]->getSpecies() << endl;
+			cout << addsV[i]->dogVector[j]->getGender() << endl;
+			cout << addsV[i]->dogVector[j]->getAge() << endl;
+			cout << addsV[i]->dogVector[j]->getLocationFound() << endl;
+			cout << addsV[i]->dogVector[j]->getPetDescription() << endl;
+			cout << addsV[i]->dogVector[j]->getFur() << endl;
 		}
+        for (int j = 0; j < addsV[i]->catVector.size(); j++) {
+            cout << addsV[i]->catVector[j]->getSpecies() << endl;
+            cout << addsV[i]->catVector[j]->getGender() << endl;
+            cout << addsV[i]->catVector[j]->getAge() << endl;
+            cout << addsV[i]->catVector[j]->getLocationFound() << endl;
+            cout << addsV[i]->catVector[j]->getPetDescription() << endl;
+            cout << addsV[i]->catVector[j]->getCatHair() << endl;
+        }
 	}
 }
 
@@ -40,23 +47,30 @@ void ShowInfo(vector<Adds*> addsV, teacher teacher1) {
         cout << addsV[i]->getAddsDate() << endl;
 
         cout << addsV[i]->teacher1.getRoomNo() << endl;
-        cout << addsV[i]->person1.getName() << endl;
-        cout << addsV[i]->person1.getSurname() << endl;
-        cout << addsV[i]->person1.getPhoneNumber() << endl;
-        cout << addsV[i]->person1.getEmailAddress() << endl;
+        cout << addsV[i]->teacher1.getName() << endl;
+        cout << addsV[i]->teacher1.getSurname() << endl;
+        cout << addsV[i]->teacher1.getPhoneNumber() << endl;
+        cout << addsV[i]->teacher1.getEmailAddress() << endl;
 
         cout << addsV[i]->teacher1.getFaculty() << endl;
         cout << addsV[i]->teacher1.getSicilNo() << endl;
         cout << addsV[i]->teacher1.getRoomNo() << endl;
 
-        for (int j = 0; j < addsV[i]->petVector.size(); j++) {
-            cout << addsV[i]->petVector[j]->getSpecies() << endl;
-            cout << addsV[i]->petVector[j]->getGender() << endl;
-            cout << addsV[i]->petVector[j]->getAge() << endl;
-            cout << addsV[i]->petVector[j]->getLocationFound() << endl;
-            cout << addsV[i]->petVector[j]->getPetDescription() << endl;
-            //cout << addsV[i]->petVector[j]->getFur() << endl;
-            //cout << addsV[i]->petVector[j]->getCatHair() << endl;
+        for (int j = 0; j < addsV[i]->dogVector.size(); j++) {
+            cout << addsV[i]->dogVector[j]->getSpecies() << endl;
+            cout << addsV[i]->dogVector[j]->getGender() << endl;
+            cout << addsV[i]->dogVector[j]->getAge() << endl;
+            cout << addsV[i]->dogVector[j]->getLocationFound() << endl;
+            cout << addsV[i]->dogVector[j]->getPetDescription() << endl;
+            cout << addsV[i]->dogVector[j]->getFur() << endl;
+        }
+        for (int j = 0; j < addsV[i]->catVector.size(); j++) {
+            cout << addsV[i]->catVector[j]->getSpecies() << endl;
+            cout << addsV[i]->catVector[j]->getGender() << endl;
+            cout << addsV[i]->catVector[j]->getAge() << endl;
+            cout << addsV[i]->catVector[j]->getLocationFound() << endl;
+            cout << addsV[i]->catVector[j]->getPetDescription() << endl;
+            cout << addsV[i]->catVector[j]->getCatHair() << endl;
         }
     }
 }
@@ -65,21 +79,28 @@ void ShowInfo(vector<Adds*> addsV, visitor visitor1) {
     for (int i = 0; i < addsV.size(); i++) {
         cout << addsV[i]->getAddsId() << endl;
         cout << addsV[i]->getAddsDate() << endl;
-        cout << addsV[i]->teacher1.getRoomNo() << endl;
-        cout << addsV[i]->person1.getName() << endl;
-        cout << addsV[i]->person1.getSurname() << endl;
-        cout << addsV[i]->person1.getPhoneNumber() << endl;
-        cout << addsV[i]->person1.getEmailAddress() << endl;
-        cout << addsV[i]->person1.getGrade() << endl;
-        cout << addsV[i]->person1.studentNumber << endl;
-        for (int j = 0; j < addsV[i]->petVector.size(); j++) {
-            cout << addsV[i]->petVector[j]->getSpecies() << endl;
-            cout << addsV[i]->petVector[j]->getGender() << endl;
-            cout << addsV[i]->petVector[j]->getAge() << endl;
-            cout << addsV[i]->petVector[j]->getLocationFound() << endl;
-            cout << addsV[i]->petVector[j]->getPetDescription() << endl;
-            //cout << addsV[i]->petVector[j]->getFur() << endl;
-            //cout << addsV[i]->petVector[j]->getCatHair() << endl;
+
+        cout << addsV[i]->visitor1.getName() << endl;
+        cout << addsV[i]->visitor1.getSurname() << endl;
+        cout << addsV[i]->visitor1.getPhoneNumber() << endl;
+        cout << addsV[i]->visitor1.getEmailAddress() << endl;
+        cout << addsV[i]->visitor1.getVisitorNo() << endl;
+        cout << addsV[i]->visitor1.getWhoseVisitor() << endl;
+        for (int j = 0; j < addsV[i]->dogVector.size(); j++) {
+            cout << addsV[i]->dogVector[j]->getSpecies() << endl;
+            cout << addsV[i]->dogVector[j]->getGender() << endl;
+            cout << addsV[i]->dogVector[j]->getAge() << endl;
+            cout << addsV[i]->dogVector[j]->getLocationFound() << endl;
+            cout << addsV[i]->dogVector[j]->getPetDescription() << endl;
+            cout << addsV[i]->dogVector[j]->getFur() << endl;
+        }
+        for (int j = 0; j < addsV[i]->catVector.size(); j++) {
+            cout << addsV[i]->catVector[j]->getSpecies() << endl;
+            cout << addsV[i]->catVector[j]->getGender() << endl;
+            cout << addsV[i]->catVector[j]->getAge() << endl;
+            cout << addsV[i]->catVector[j]->getLocationFound() << endl;
+            cout << addsV[i]->catVector[j]->getPetDescription() << endl;
+            cout << addsV[i]->catVector[j]->getCatHair() << endl;
         }
     }
 }
