@@ -13,6 +13,7 @@ public:
     //Constructor and Destructor
     visitor();
     visitor(int visitorNo, string whoseVisitor);
+    visitor(string name, string surname, string phoneNumber, string emailAddress, int visitorNo, string whoseVisitor);
     ~visitor();
 
     // Encapsulation for Person class

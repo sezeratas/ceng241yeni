@@ -9,14 +9,14 @@
 
 using namespace std;
 
-student::student() {
+Student::Student() {
 	grade = 0;
 	studentNumber = "-Not known-";
 	department = "-Not known-";
 	cout << "New student created" << endl << endl;
 }
 
-student::student(int grade, string studentNumber, string department) {
+Student::Student(int grade, string studentNumber, string department) {
 
 	this->grade = grade;
 	this->studentNumber = studentNumber;
@@ -24,27 +24,39 @@ student::student(int grade, string studentNumber, string department) {
 	cout << "New student created." << endl << endl;
 }
 
-student::~student() {
+Student::Student(string name, string surname, string phoneNumber, string emailaddress, int grade, string studentNumber, string department) {
+	this->name = name;
+	this->surname = surname;
+	this->phoneNumber = phoneNumber;
+	this->emailAddress = emailaddress;
+
+	this->grade = grade;
+	this->studentNumber = studentNumber;
+	this->department = department;
+	cout << "New student created." << endl << endl;
+}
+
+Student::~Student() {
 	cout << "Student deleted." << endl << endl;
 }
-int student::getGrade() {
+int Student::getGrade() {
 	return this->grade;
 }
-void student::setGrade(int grade) {
+void Student::setGrade(int grade) {
 	this->grade = grade;
 }
 
-string student::getStudentNumber() {
+string Student::getStudentNumber() {
 	return this->studentNumber;
 }
-void student::setStudentNumber(string studentNumber) {
+void Student::setStudentNumber(string studentNumber) {
 	this->studentNumber = studentNumber;
 }
 
-string student::getDepartment() {
+string Student::getDepartment() {
 	return this->studentNumber;
 }
-void student::setDepartment(string department) {
+void Student::setDepartment(string department) {
 	this->studentNumber = studentNumber;
 }
 

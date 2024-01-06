@@ -18,6 +18,11 @@ Dog::Dog() {
 Dog::Dog(string fur, string species, string gender, int age, string locationFound, string petDescription){
 
 	this->fur = fur;
+	this->species = species;
+	this->gender = gender;
+	this->age = age;
+	this->locationFound = locationFound;
+	this->petDescription = petDescription;
 
 	cout << "New dog created." << endl << endl;
 }

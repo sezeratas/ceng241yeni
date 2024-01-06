@@ -23,6 +23,17 @@ Cat::Cat(string catHair) {
 	cout << "New cat created." << endl << endl;
 }
 
+Cat::Cat(string catHair, string species, string gender, int age, string locationFound, string petDescription) {
+	this->catHair = catHair;
+	this->species = species;
+	this->gender = gender;
+	this->age = age;
+	this->locationFound = locationFound;
+	this->petDescription = petDescription;
+
+	cout << "New cat created." << endl << endl;
+}
+
 Cat::~Cat() {
 	cout << "Cat deleted." << endl << endl;
 }

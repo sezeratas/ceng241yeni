@@ -14,6 +14,7 @@ public:
     //Constructor and Destructor
     teacher();
     teacher(string faculty, string sicilNo, string roomNo);
+    teacher(string faculty, string sicilNo, string roomNo, string name, string surname, string emailAddress, string phone);
     ~teacher();
 
     // Encapsulation for Person class

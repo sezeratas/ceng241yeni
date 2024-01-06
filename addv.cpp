@@ -14,6 +14,13 @@ Adds::Adds(int addId, string addDate) {
 	this->addDate = addDate;
 }
 
+Adds::Adds(int AddId, string AddDate, Person person, Pet pet1) {
+	this->addId = addId;
+	this->addDate = addDate;
+	this->person1 = person;
+	petVector.push_back(&pet1);
+}
+
 Adds::~Adds() {
 	cout << "Add deleted." << endl << endl;
 }

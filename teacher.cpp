@@ -24,6 +24,18 @@ teacher::teacher(string faculty, string sicilNo, string roomNo) {
 	cout << "New teacher created." << endl << endl;
 }
 
+teacher::teacher(string faculty, string sicilNo, string roomNo, string name, string surname, string emailAddress, string phone) {
+	this->name = name;
+	this->surname = surname;
+	this->emailAddress = emailAddress;
+	this->phoneNumber = phone;
+
+	this->faculty = faculty;
+	this->sicilNo = sicilNo;
+	this->roomNo = roomNo;
+	cout << "New teacher created." << endl << endl;
+}
+
 teacher::~teacher() {
 	cout << "Teacher deleted." << endl << endl;
 }

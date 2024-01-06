@@ -4,7 +4,7 @@
 
 using namespace std;
 
-class student: public Person
+class Student: public Person
 {
 public:
 	int grade;
@@ -13,9 +13,10 @@ public:
 
 
     //Constructor and Destructor
-    student();
-    student(int grade, string studentNumber, string department);
-    ~student();
+    Student();
+    Student(int grade, string studentNumber, string department);
+    Student(string name, string surname, string phoneNumber, string emailaddress, int grade, string studentNumber, string department);
+    ~Student();
 
     // Encapsulation for Person class
 

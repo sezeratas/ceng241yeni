@@ -1,7 +1,6 @@
 #pragma once
 #include<iostream>
 #include<vector>
-#include "pet.h"
 
 using namespace std;
 
@@ -13,8 +12,6 @@ protected:
     string emailAddress;
 
 public:
-
-    //vector<Pet*> petVector;
 
     //Constructor and Destructor
     Person();
