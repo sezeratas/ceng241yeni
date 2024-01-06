@@ -8,18 +8,20 @@
 
 using namespace std;
 
-void ShowInfo(vector<Adds*> addsV) {
+void ShowInfo(vector<Adds*> addsV, Student student1) {
     for(int i = 0; i < addsV.size(); i++) {
 		cout << addsV[i]->getAddsId() << endl;
 		cout << addsV[i]->getAddsDate() << endl;
-        cout << addsV[i]->teacher1.getRoomNo() << endl;
+
         cout << addsV[i]->person1.getName() << endl;
         cout << addsV[i]->person1.getSurname() << endl;
         cout << addsV[i]->person1.getPhoneNumber() << endl;
         cout << addsV[i]->person1.getEmailAddress() << endl;
-        //cout << addsV[i]->person1.getGrade() << endl;
-        //cout << addsV[i]->person1.studentNumber << endl;
-        //cout << addsV[i]->person1.department << endl;
+
+        cout << addsV[i]->student1.getGrade() << endl;
+        cout << addsV[i]->student1.getStudentNumber() << endl;
+        cout << addsV[i]->student1.getDepartment() << endl;
+
         for(int j=0; j < addsV[i]->petVector.size(); j++) {
 			cout << addsV[i]->petVector[j]->getSpecies() << endl;
 			cout << addsV[i]->petVector[j]->getGender() << endl;
@@ -30,6 +32,56 @@ void ShowInfo(vector<Adds*> addsV) {
 			//cout << addsV[i]->petVector[j]->getCatHair() << endl;
 		}
 	}
+}
+
+void ShowInfo(vector<Adds*> addsV, teacher teacher1) {
+    for (int i = 0; i < addsV.size(); i++) {
+        cout << addsV[i]->getAddsId() << endl;
+        cout << addsV[i]->getAddsDate() << endl;
+
+        cout << addsV[i]->teacher1.getRoomNo() << endl;
+        cout << addsV[i]->person1.getName() << endl;
+        cout << addsV[i]->person1.getSurname() << endl;
+        cout << addsV[i]->person1.getPhoneNumber() << endl;
+        cout << addsV[i]->person1.getEmailAddress() << endl;
+
+        cout << addsV[i]->teacher1.getFaculty() << endl;
+        cout << addsV[i]->teacher1.getSicilNo() << endl;
+        cout << addsV[i]->teacher1.getRoomNo() << endl;
+
+        for (int j = 0; j < addsV[i]->petVector.size(); j++) {
+            cout << addsV[i]->petVector[j]->getSpecies() << endl;
+            cout << addsV[i]->petVector[j]->getGender() << endl;
+            cout << addsV[i]->petVector[j]->getAge() << endl;
+            cout << addsV[i]->petVector[j]->getLocationFound() << endl;
+            cout << addsV[i]->petVector[j]->getPetDescription() << endl;
+            //cout << addsV[i]->petVector[j]->getFur() << endl;
+            //cout << addsV[i]->petVector[j]->getCatHair() << endl;
+        }
+    }
+}
+
+void ShowInfo(vector<Adds*> addsV, visitor visitor1) {
+    for (int i = 0; i < addsV.size(); i++) {
+        cout << addsV[i]->getAddsId() << endl;
+        cout << addsV[i]->getAddsDate() << endl;
+        cout << addsV[i]->teacher1.getRoomNo() << endl;
+        cout << addsV[i]->person1.getName() << endl;
+        cout << addsV[i]->person1.getSurname() << endl;
+        cout << addsV[i]->person1.getPhoneNumber() << endl;
+        cout << addsV[i]->person1.getEmailAddress() << endl;
+        cout << addsV[i]->person1.getGrade() << endl;
+        cout << addsV[i]->person1.studentNumber << endl;
+        for (int j = 0; j < addsV[i]->petVector.size(); j++) {
+            cout << addsV[i]->petVector[j]->getSpecies() << endl;
+            cout << addsV[i]->petVector[j]->getGender() << endl;
+            cout << addsV[i]->petVector[j]->getAge() << endl;
+            cout << addsV[i]->petVector[j]->getLocationFound() << endl;
+            cout << addsV[i]->petVector[j]->getPetDescription() << endl;
+            //cout << addsV[i]->petVector[j]->getFur() << endl;
+            //cout << addsV[i]->petVector[j]->getCatHair() << endl;
+        }
+    }
 }
 
 int main()
@@ -94,7 +146,7 @@ int main()
 
                 //Student student1(name, surname, phoneNumber, emailAddress, grade, studentNumber, department);
 
-                Student* student1 = new Student(name, surname, phoneNumber, emailAddress, grade, studentNumber, department);
+                Student* st1 = new Student(name, surname, phoneNumber, emailAddress, grade, studentNumber, department);
 
                 int petchc;
                 cout << "Input the pet's type: "<< endl;
@@ -135,7 +187,7 @@ int main()
                     Adds advertisement1(addCounter, addDate, student1, dog1);*/
 
                     Dog* dog1 = new Dog(fur, species, gender, age, locationFound, petDescription);
-                    Adds* adds1 = new Adds(addCounter, addDate, *student1, *dog1);
+                    Adds* adds1 = new Adds(addCounter, addDate, *st1, *dog1);
 
                     addsV.push_back(adds1);
 
@@ -173,7 +225,7 @@ int main()
                     getline(cin, catHair);
 
                     Cat *cat1 = new Cat(catHair, species, gender, age, locationFound, petDescription);
-                    Adds *adds1 = new Adds(addCounter, addDate, *student1, *cat1);
+                    Adds *adds1 = new Adds(addCounter, addDate, *st1, *cat1);
 
                     addsV.push_back(adds1);
 
@@ -433,7 +485,8 @@ int main()
 
             }
             case 2:
-                ShowInfo(addsV);
+                ShowInfo(addsV,teacher);
+                ShowInfo(addsV, *teacher1);
         		break;
         }
     } 

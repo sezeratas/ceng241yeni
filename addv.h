@@ -17,8 +17,12 @@ public:
     int addId;
     string addDate;
 
-    Person person1;
-    vector<Pet*> petVector;
+    Student student1;
+    teacher teacher1;
+    visitor visitor1;
+
+    vector<Dog*> dogVector;
+    vector<Cat*> catVector;
 
     int getAddsId();
     void setAddsId(int addId);
@@ -29,7 +33,12 @@ public:
     Adds();
     Adds(int AddId, string AddDate);
 
-    Adds(int addId, string addDate, Person p1, Pet pet1); // for student
+
+    Adds(int AddId, string AddDate, Student student1, Dog dog1, Cat cat1);
+
+    Adds(int AddId, string AddDate, teacher teacher1, Dog dog1, Cat cat1);
+
+    Adds(int AddId, string AddDate, visitor visitor1, Dog dog1, Cat cat1);
 
     ~Adds();
 

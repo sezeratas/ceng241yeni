@@ -14,11 +14,35 @@ Adds::Adds(int addId, string addDate) {
 	this->addDate = addDate;
 }
 
-Adds::Adds(int AddId, string AddDate, Person person, Pet pet1) {
+Adds::Adds(int AddId, string AddDate, Student student1, Dog dog1, Cat cat1) {
 	this->addId = addId;
 	this->addDate = addDate;
-	this->person1 = person;
-	petVector.push_back(&pet1);
+	this->student1 = student1;
+	//this->teacher1 = NULL;
+	//this->visitor1 = 0;
+
+	dogVector.push_back(&dog1);
+	catVector.push_back(&cat1);
+}
+Adds::Adds(int AddId, string AddDate, teacher teacher1, Dog dog1, Cat cat1) {
+	this->addId = addId;
+	this->addDate = addDate;
+	//this->student1 = student1;
+	this->teacher1 = teacher1;
+	//this->visitor1 = visitor1;
+
+	dogVector.push_back(&dog1);
+	catVector.push_back(&cat1);
+}
+Adds::Adds(int AddId, string AddDate, visitor visitor1, Dog dog1, Cat cat1) {
+	this->addId = addId;
+	this->addDate = addDate;
+	//this->student1 = student1;
+	//this->teacher1 = teacher1;
+	this->visitor1 = visitor1;
+
+	dogVector.push_back(&dog1);
+	catVector.push_back(&cat1);
 }
 
 Adds::~Adds() {
