@@ -20,11 +20,11 @@ public:
     Person person1;
     vector<Pet*> petVector;
 
-    int getAddvId();
-    void setAddvId(int addId);
+    int getAddsId();
+    void setAddsId(int addId);
 
-    string getAddvDate();
-    void setAddvDate(string addDate);
+    string getAddsDate();
+    void setAddsDate(string addDate);
 
     Adds();
     Adds(int AddId, string AddDate);

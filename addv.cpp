@@ -24,17 +24,17 @@ Adds::Adds(int AddId, string AddDate, Person person, Pet pet1) {
 Adds::~Adds() {
 	cout << "Add deleted." << endl << endl;
 }
-int Adds::getAddvId() {
+int Adds::getAddsId() {
 	return NULL;
 }
-void Adds::setAddvId(int id) {
+void Adds::setAddsId(int id) {
 
 }
 
-string Adds::getAddvDate() {
+string Adds::getAddsDate() {
 	return NULL;
 }
-void Adds::setAddvDate(string addDate) {
+void Adds::setAddsDate(string addDate) {
 
 }
 

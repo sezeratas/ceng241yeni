@@ -8,10 +8,36 @@
 
 using namespace std;
 
+void ShowInfo(vector<Adds*> addsV) {
+    for(int i = 0; i < addsV.size(); i++) {
+		cout << addsV[i]->getAddsId() << endl;
+		cout << addsV[i]->getAddsDate() << endl;
+        cout << addsV[i]->teacher1.getRoomNo() << endl;
+        cout << addsV[i]->person1.getName() << endl;
+        cout << addsV[i]->person1.getSurname() << endl;
+        cout << addsV[i]->person1.getPhoneNumber() << endl;
+        cout << addsV[i]->person1.getEmailAddress() << endl;
+        //cout << addsV[i]->person1.getGrade() << endl;
+        //cout << addsV[i]->person1.studentNumber << endl;
+        //cout << addsV[i]->person1.department << endl;
+        for(int j=0; j < addsV[i]->petVector.size(); j++) {
+			cout << addsV[i]->petVector[j]->getSpecies() << endl;
+			cout << addsV[i]->petVector[j]->getGender() << endl;
+			cout << addsV[i]->petVector[j]->getAge() << endl;
+			cout << addsV[i]->petVector[j]->getLocationFound() << endl;
+			cout << addsV[i]->petVector[j]->getPetDescription() << endl;
+			//cout << addsV[i]->petVector[j]->getFur() << endl;
+			//cout << addsV[i]->petVector[j]->getCatHair() << endl;
+		}
+	}
+}
+
 int main()
 {
     string addDate = "2023";
     int addCounter = 0;
+
+    vector<Adds*> addsV;
 
     int mainchoice;
     do {
@@ -23,17 +49,16 @@ int main()
             case 1:
                 addCounter++;
                 int firstchoice;
-                bool returnToMainMenu = false;
 
-                int chc;
+                int personChc;
                 cout << "Select a person type: " << endl;
                 cout << "1.Student: " << endl;
                 cout << "2.Teacher: " << endl;
                 cout << "3.Visitor: " << endl;
                 cout << "4.Exit" << endl;
-                cin >> chc;
+                cin >> personChc;
 
-                if (chc == 1) {
+                if (personChc == 1) {
 
                 int grade;
                 string studentNumber;
@@ -67,10 +92,12 @@ int main()
                 cout << "Input the student's department: ";
                 getline(cin, department);
 
-                Student student1(name, surname, phoneNumber, emailAddress, grade, studentNumber, department);
+                //Student student1(name, surname, phoneNumber, emailAddress, grade, studentNumber, department);
+
+                Student* student1 = new Student(name, surname, phoneNumber, emailAddress, grade, studentNumber, department);
 
                 int petchc;
-                cout << "Input the pet's type: ";
+                cout << "Input the pet's type: "<< endl;
                 cout << "1.Dog " << endl;
                 cout << "2.Cat" << endl;
                 cin >> petchc;
@@ -104,8 +131,14 @@ int main()
                     cout << "Input the dog's fur: ";
                     getline(cin, fur);
 
-                    Dog dog1(fur, species, gender, age, locationFound, petDescription);
-                    Adds advertisement1(addCounter, addDate, student1, dog1);
+                    /*Dog dog1(fur, species, gender, age, locationFound, petDescription);
+                    Adds advertisement1(addCounter, addDate, student1, dog1);*/
+
+                    Dog* dog1 = new Dog(fur, species, gender, age, locationFound, petDescription);
+                    Adds* adds1 = new Adds(addCounter, addDate, *student1, *dog1);
+
+                    addsV.push_back(adds1);
+
                     break;
                 }
 
@@ -139,14 +172,19 @@ int main()
                     cout << "Input the cat's cat hairs: ";
                     getline(cin, catHair);
 
-                    Cat cat1(catHair, species, gender, age, locationFound, petDescription);
-                    Adds advertisement1(addCounter, addDate, student1, cat1);
+                    Cat *cat1 = new Cat(catHair, species, gender, age, locationFound, petDescription);
+                    Adds *adds1 = new Adds(addCounter, addDate, *student1, *cat1);
+
+                    addsV.push_back(adds1);
+
+                    /*Cat cat1(catHair, species, gender, age, locationFound, petDescription);
+                    Adds advertisement1(addCounter, addDate, student1, cat1);*/
 
                     break;
                 }
             }
 
-                else if (chc == 2) {
+                else if (personChc == 2) {
 
                 string faculty;
                 string sicilNo;
@@ -180,7 +218,9 @@ int main()
                 cout << "Input the teacher's roomNo: ";
                 getline(cin, roomNo);
 
-                teacher teacher1(name, surname, phoneNumber, emailAddress, faculty, sicilNo, roomNo);
+                //teacher teacher1(name, surname, phoneNumber, emailAddress, faculty, sicilNo, roomNo);
+
+                teacher* teacher1 = new teacher(name, surname, phoneNumber, emailAddress, faculty, sicilNo, roomNo);
 
                 int petchc;
                 cout << "Input the pet's type: " << endl;
@@ -217,8 +257,13 @@ int main()
                     cout << "Input the dog's fur: ";
                     getline(cin, fur);
 
-                    Dog dog1(fur, species, gender, age, locationFound, petDescription);
-                    Adds advertisement1(addCounter, addDate, teacher1, dog1);
+                    /*Dog dog1(fur, species, gender, age, locationFound, petDescription);
+                    Adds advertisement1(addCounter, addDate, teacher1, dog1);*/
+
+                    Dog* dog1 = new Dog(fur, species, gender, age, locationFound, petDescription);
+                    Adds* adds1 = new Adds(addCounter, addDate, *teacher1, *dog1);
+
+                    addsV.push_back(adds1);
 
                     break;
                 }
@@ -253,14 +298,19 @@ int main()
                     cout << "Input the cat's cat hairs: ";
                     getline(cin, catHair);
 
-                    Cat cat1(catHair, species, gender, age, locationFound, petDescription);
-                    Adds advertisement1(addCounter, addDate, teacher1, cat1);
+                    /*Cat cat1(catHair, species, gender, age, locationFound, petDescription);
+                    Adds advertisement1(addCounter, addDate, teacher1, cat1);*/
+
+                    Cat* cat1 = new Cat(catHair, species, gender, age, locationFound, petDescription);
+                    Adds* adds1 = new Adds(addCounter, addDate, *teacher1, *cat1);
+
+                    addsV.push_back(adds1);
 
                     break;
                 }
             }
 
-                else if (chc == 3) {
+                else if (personChc == 3) {
 
                 int visitorNo;
                 string whoseVisitor;
@@ -290,7 +340,9 @@ int main()
                 cout << "Input the visitor's whoseVisitor: ";
                 getline(cin, whoseVisitor);
 
-                visitor visitor1(name, surname, phoneNumber, emailAddress, visitorNo, whoseVisitor);
+                //visitor visitor1(name, surname, phoneNumber, emailAddress, visitorNo, whoseVisitor);
+
+                visitor* visitor1 = new visitor(name, surname, phoneNumber, emailAddress, visitorNo, whoseVisitor);
 
                 int petchc;
                 cout << "Input the pet's type: " << endl;
@@ -327,8 +379,13 @@ int main()
                     cout << "Input the dog's fur: ";
                     getline(cin, fur);
 
-                    Dog dog1(fur, species, gender, age, locationFound, petDescription);
-                    Adds advertisement1(addCounter, addDate, visitor1, dog1);
+                    /*Dog dog1(fur, species, gender, age, locationFound, petDescription);
+                    Adds advertisement1(addCounter, addDate, visitor1, dog1);*/
+
+                    Dog* dog1 = new Dog(fur, species, gender, age, locationFound, petDescription);
+                    Adds* adds1 = new Adds(addCounter, addDate, *visitor1, *dog1);
+
+                    addsV.push_back(adds1);
 
                     break;
                 }
@@ -363,17 +420,31 @@ int main()
                     cout << "Input the cat's cat hairs: ";
                     getline(cin, catHair);
 
-                    Cat cat1(catHair, species, gender, age, locationFound, petDescription);
-                    Adds advertisement1(addCounter, addDate, visitor1, cat1);
+                    /*Cat cat1(catHair, species, gender, age, locationFound, petDescription);
+                    Adds advertisement1(addCounter, addDate, visitor1, cat1);*/
+
+                    Cat* cat1 = new Cat(catHair, species, gender, age, locationFound, petDescription);
+                    Adds* adds1 = new Adds(addCounter, addDate, *visitor1, *cat1);
+
+                    addsV.push_back(adds1);
 
                     break;
                 }
 
             }
-        
+            case 2:
+                ShowInfo(addsV);
+        		break;
         }
     } 
     while (mainchoice != 3);
+
+    for(int i = 0; i < addsV.size(); i++) {
+        for (int j = 0; j < addsV[i]->petVector.size(); j++) {
+            delete addsV[i]->petVector[j];
+        }
+		delete addsV[i];
+	}
 
     return 0;
 }
