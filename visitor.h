@@ -6,10 +6,10 @@ using namespace std;
 
 class visitor : public Person
 {
-public:
+private:
     int visitorNo;
     string whoseVisitor;
-
+public:
     //Constructor and Destructor
     visitor();
     visitor(int visitorNo, string whoseVisitor);

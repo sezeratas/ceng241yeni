@@ -11,13 +11,13 @@ using namespace std;
 
 class Pet {
 
-public:
+private:
     string species;
     string gender;
     int age;
     string locationFound;
     string petDescription;
-
+public:
     Pet();
     Pet(string species, string gender, int age, string locationFound, string petDescription);  // Constructor overloading for animals's multiple pet.
     ~Pet();

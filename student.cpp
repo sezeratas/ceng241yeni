@@ -13,7 +13,7 @@ Student::Student() {
 	grade = 0;
 	studentNumber = "-Not known-";
 	department = "-Not known-";
-	cout << "New student created" << endl << endl;
+	//cout << "New student created" << endl << endl;
 }
 
 Student::Student(int grade, string studentNumber, string department) {
@@ -21,7 +21,7 @@ Student::Student(int grade, string studentNumber, string department) {
 	this->grade = grade;
 	this->studentNumber = studentNumber;
 	this->department = department;
-	cout << "New student created." << endl << endl;
+	//cout << "New student created." << endl << endl;
 }
 
 Student::Student(string name, string surname, string phoneNumber, string emailaddress, int grade, string studentNumber, string department) {
@@ -33,11 +33,11 @@ Student::Student(string name, string surname, string phoneNumber, string emailad
 	this->grade = grade;
 	this->studentNumber = studentNumber;
 	this->department = department;
-	cout << "New student created." << endl << endl;
+	//cout << "New student created." << endl << endl;
 }
 
 Student::~Student() {
-	cout << "Student deleted." << endl << endl;
+	//cout << "Student deleted." << endl << endl;
 }
 int Student::getGrade() {
 	return this->grade;

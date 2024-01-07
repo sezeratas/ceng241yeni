@@ -12,23 +12,22 @@ using namespace std;
 Dog::Dog() {
 	fur = "-Not known-";
 
-	cout << "New dog created" << endl << endl;
+	//cout << "New dog created" << endl << endl;
 }
 
 Dog::Dog(string fur, string species, string gender, int age, string locationFound, string petDescription){
+	setFur(fur);
+	setSpecies(species);
+	setGender(gender);
+	setAge(age);
+	setLocationFound(locationFound);
+	setPetDescription(petDescription);
 
-	this->fur = fur;
-	this->species = species;
-	this->gender = gender;
-	this->age = age;
-	this->locationFound = locationFound;
-	this->petDescription = petDescription;
-
-	cout << "New dog created." << endl << endl;
+	//cout << "New dog created." << endl << endl;
 }
 
 Dog::~Dog() {
-	cout << "Dog deleted." << endl << endl;
+	//cout << "The dog deleted." << endl << endl;
 }
 string Dog::getFur() {
 	return this->fur;

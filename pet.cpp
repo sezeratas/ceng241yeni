@@ -16,7 +16,7 @@ Pet::Pet() {
 	locationFound = "-Not known-";
 	petDescription = "-Not known-";
 
-	cout << "New pet created" << endl << endl;
+	//cout << "New pet created" << endl << endl;
 }
 
 Pet::Pet(string species,string gender,int age,string locationFound,string petDescription) {
@@ -27,11 +27,11 @@ Pet::Pet(string species,string gender,int age,string locationFound,string petDes
 	this->locationFound = locationFound;
 	this->petDescription = petDescription;
 
-	cout << "New pet created." << endl << endl;
+	//cout << "New pet created." << endl << endl;
 }
 
 Pet::~Pet() {
-	cout << "Pet deleted." << endl << endl;
+	//cout << "Pet deleted." << endl << endl;
 }
 
 string Pet::getSpecies() {

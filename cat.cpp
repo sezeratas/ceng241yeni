@@ -13,29 +13,29 @@ using namespace std;
 Cat::Cat() {
 	catHair = "-Not known-";
 
-	cout << "New cat created" << endl << endl;
+	//cout << "New cat created" << endl << endl;
 }
 
 Cat::Cat(string catHair) {
 
 	this->catHair = catHair;
 
-	cout << "New cat created." << endl << endl;
+	//cout << "New cat created." << endl << endl;
 }
 
 Cat::Cat(string catHair, string species, string gender, int age, string locationFound, string petDescription) {
-	this->catHair = catHair;
-	this->species = species;
-	this->gender = gender;
-	this->age = age;
-	this->locationFound = locationFound;
-	this->petDescription = petDescription;
+	setCatHair(catHair);
+	setSpecies(species);
+	setGender(gender);
+	setAge(age);
+	setLocationFound(locationFound);
+	setPetDescription(petDescription);
 
-	cout << "New cat created." << endl << endl;
+	//cout << "New cat created." << endl << endl;
 }
 
 Cat::~Cat() {
-	cout << "Cat deleted." << endl << endl;
+	//cout << "Cat deleted." << endl << endl;
 }
 string Cat::getCatHair() {
 	return this->catHair;

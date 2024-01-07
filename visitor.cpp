@@ -18,7 +18,7 @@ visitor::visitor(int visitorNo, string whoseVisitor) {
 
 	this->visitorNo = visitorNo;
 	this->whoseVisitor = whoseVisitor;
-	cout << "New visitor created." << endl << endl;
+	//cout << "New visitor created." << endl << endl;
 }
 
 visitor::visitor(string name, string surname, string phoneNumber, string emailAddress, int visitorNo, string whoseVisitor) {
@@ -29,11 +29,11 @@ visitor::visitor(string name, string surname, string phoneNumber, string emailAd
 
 	this->visitorNo = visitorNo;
 	this->whoseVisitor = whoseVisitor;
-	cout << "New visitor created." << endl << endl;
+	//cout << "New visitor created." << endl << endl;
 }
 
 visitor::~visitor() {
-	cout << "Visitor deleted." << endl << endl;
+	//cout << "Visitor deleted." << endl << endl;
 }
 int visitor::getVisitorNo() {
 	return this->visitorNo;

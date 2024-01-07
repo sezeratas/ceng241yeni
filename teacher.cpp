@@ -13,7 +13,7 @@ teacher::teacher() {
 	faculty = "-Not known-";
 	sicilNo = "-Not known-";
 	roomNo = "-Not known-";
-	cout << "New teacher created" << endl << endl;
+	//cout << "New teacher created" << endl << endl;
 }
 
 teacher::teacher(string faculty, string sicilNo, string roomNo) {
@@ -21,7 +21,7 @@ teacher::teacher(string faculty, string sicilNo, string roomNo) {
 	this->faculty = faculty;
 	this->sicilNo = sicilNo;
 	this->roomNo = roomNo;
-	cout << "New teacher created." << endl << endl;
+	//cout << "New teacher created." << endl << endl;
 }
 
 teacher::teacher(string faculty, string sicilNo, string roomNo, string name, string surname, string emailAddress, string phone) {
@@ -33,11 +33,11 @@ teacher::teacher(string faculty, string sicilNo, string roomNo, string name, str
 	this->faculty = faculty;
 	this->sicilNo = sicilNo;
 	this->roomNo = roomNo;
-	cout << "New teacher created." << endl << endl;
+	//cout << "New teacher created." << endl << endl;
 }
 
 teacher::~teacher() {
-	cout << "Teacher deleted." << endl << endl;
+	//cout << "Teacher deleted." << endl << endl;
 }
 string teacher::getFaculty() {
 	return this->faculty;

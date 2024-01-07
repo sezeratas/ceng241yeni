@@ -14,9 +14,9 @@ using namespace std;
 
 class Cat : public Pet {
 
-public:
+private:
     string catHair;
-
+public:
     Cat();
     Cat(string catHair);  // Constructor overloading for animals's multiple pet.
     Cat(string catHair, string species, string gender, int age, string locationFound, string petDescription);

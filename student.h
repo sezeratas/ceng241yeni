@@ -6,12 +6,12 @@ using namespace std;
 
 class Student: public Person
 {
-public:
+private:
 	int grade;
 	string studentNumber;
 	string department;
 
-
+public:
     //Constructor and Destructor
     Student();
     Student(int grade, string studentNumber, string department);

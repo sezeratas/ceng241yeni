@@ -20,7 +20,7 @@ Person::Person(string name, string surname, string phoneNumber, string emailAddr
 }
 
 Person::~Person() {
-	cout << "Person deleted." << endl << endl;
+
 }
 
 string Person::getName() {

@@ -13,10 +13,10 @@
 using namespace std;
 
 class Adds {
-public:
+private:
     int addId;
     string addDate;
-
+public:
     Student student1;
     teacher teacher1;
     visitor visitor1;
@@ -34,16 +34,22 @@ public:
     Adds(int AddId, string AddDate);
 
 
-    Adds(int AddId, string AddDate, Student student1, Dog dog1, Cat cat1);
+    Adds(int AddId, string AddDate, Student student1, Dog dog1);
 
-    Adds(int AddId, string AddDate, teacher teacher1, Dog dog1, Cat cat1);
+    Adds(int AddId, string AddDate, Student student1, Cat cat1);
 
-    Adds(int AddId, string AddDate, visitor visitor1, Dog dog1, Cat cat1);
+    Adds(int AddId, string AddDate, teacher teacher1, Dog dog1);
+
+    Adds(int AddId, string AddDate, teacher teacher1, Cat cat1);
+
+    Adds(int AddId, string AddDate, visitor visitor1, Dog dog1);
+
+    Adds(int AddId, string AddDate, visitor visitor1, Cat cat1);
 
     ~Adds();
 
-    void DeleteAdds();
-    void ShowAdds();
-    void EditAdds();
+    //void DeleteAdds();
+    //void ShowAdds();
+    //void EditAdds();
 
 };

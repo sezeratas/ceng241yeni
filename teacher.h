@@ -6,11 +6,11 @@ using namespace std;
 
 class teacher : public Person
 {
-public:
+private:
     string faculty;
     string sicilNo;
     string roomNo;
-
+public:
     //Constructor and Destructor
     teacher();
     teacher(string faculty, string sicilNo, string roomNo);
